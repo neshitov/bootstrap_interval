@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: bootstrap-interval
+Version: 0.0.4
+Summary: A small package for bootstrap confidence intervals
+Home-page: https://github.com/neshitov/bootstrap
+Author: Alexander Neshitov
+Author-email: alexander.neshitov@gmail.com
+License: UNKNOWN
+Description: #### Bootstrap
+        This module implements the non-parametric bootstrap confidence intervals
+        described in 'Bootstrap Confidence Intervals' by T. DiCiccio and B. Efron.
+        
+        ## Files description
+        bootstrap.py describes the Bootstrap class and methods
+        code.py  provides a demonstration: test confidence intervals constructed using
+        bootstrapping methods from samples of length 100 from uniform distribution
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
