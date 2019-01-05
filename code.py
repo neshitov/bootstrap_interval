@@ -42,9 +42,9 @@ print('after %d iterations %d sampling correct' %(N,np.sum(check_sampling)))
 # compare the lengths of confidence intervals
 plt.subplot(1,3,1).set_title('bias corrected')
 plt.hist(length_bc)
-plt.subplot(1,3,2)
-plt.hist(length_perc).set_title('percentile method')
-plt.subplot(1,3,3)
-plt.hist(length_sampling).set_title('sampling method')
+plt.subplot(1,3,2).set_title('percentile method')
+plt.hist(length_perc)
+plt.subplot(1,3,3).set_title('sampling method')
+plt.hist(length_sampling)
 plt.tight_layout
 plt.show()
