@@ -35,3 +35,26 @@ Arguments:
   if **method**="bias_corrected" then the bias corrected method with acceleration is used (formula 2.3 of DiCiccio and Efron)
   
  ## Example
+code.py contains the following simulation:
+A 1000 samples of length 100 are drawn from uniform distribution U(0,1).
+For each of the samples compute a 95%-confidence interval for the standard deviation using each of 3 methods:
+```
+for i in range(1000):
+    sample = np.random.uniform(size=10**2)
+    bs = bootstrap_interval.Bootstrap(sample, stat='std')
+    left_bc, right_bc = bs.get_confidence_interval(0.05, method='bias_corrected')
+    left_perc, right_perc = bs.get_confidence_interval(0.05, method='percentile')
+    left_sampling, right_sampling = bs.get_confidence_interval(0.05, method='sampling')
+```                                    
+Then we compute how many intervals contain the true staandard deviation value: sqrt(1/12)  
+bias_corrected method: 944  
+percentile method: 940  
+sampling method: 938  
+sizes of the confidence intervals:
+![alt text](https://raw.githubusercontent.com/neshitov/bootstrap/master/Figure_1.png)
+So the three methods show pretty close results
+
+## References:
+* A. van der Vaart. Asymptotic statistics, 1998
+* T. DiCiccio, B. Efron. Bootstrap Confidence Intervals. Statistical Science 1996, Vol. 11, No. 3, 189–228
+
