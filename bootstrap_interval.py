@@ -53,8 +53,8 @@ class Bootstrap:
         with significance level alpha
         Args:
             alpha: significance level
-            method: one of ['percentile','sample','bias_corrected']
-                    if method='sample' the interval is constructed from bootstrap
+            method: one of ['percentile','sampling','bias_corrected']
+                    if method='sampling' the interval is constructed from bootstrap
                     distribution quantiles
                     if method='percentile' the intrval is constructed using
                     percentile method (Ch. 23.1 van der Vaart, 'Asymptotic
