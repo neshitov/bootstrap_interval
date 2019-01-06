@@ -18,7 +18,7 @@ import bootstrap_interval
 from sys import stdout
 
 np.random.seed(42)
-N = 10
+N = 1000
 # true value of uniform distribution std
 correct_stat = np.sqrt(1 / 12)
 # Estimate bootsrap confidence intervals for std of uniform distribution
