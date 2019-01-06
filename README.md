@@ -3,7 +3,7 @@ This module implements the non-parametric bootstrap confidence intervals
 described in 'Bootstrap Confidence Intervals' by T. DiCiccio and B. Efron.
 
 ## Installation
-Package is available on PyPI and can be installed using pip:  
+Package is [available on PyPI](https://pypi.org/project/bootstrap-interval/) and can be installed using pip:  
 ``` pip install bootstrap-interval ```
 ## Files description
 * bootstrap_interval.py contains the package source code
